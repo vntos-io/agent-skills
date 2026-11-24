@@ -78,7 +78,7 @@ Open an [issue](https://github.com/vntos-io/agent-skills/issues/new/choose) if s
 
 ## Want help with more than a skill?
 
-VNTOS builds software and AI tools for small and mid-size companies. If you want your AI set up for how your team works, [book a call](https://vntos.io/start).
+VNTOS builds software and AI tools with the people who use them. If you want your AI set up for how your team works, [book a call](https://vntos.io/start).
 
 ## License
 
