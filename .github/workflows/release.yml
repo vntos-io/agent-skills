@@ -17,4 +17,9 @@ jobs:
         run: |
           skill="${GITHUB_REF_NAME%-v*}"; ver="${GITHUB_REF_NAME##*-v}"
           notes=$(awk -v s="## $skill" -v v="### $ver" '$0==s{a=1;next} /^## /{a=0} a&&$0~"^"v{b=1;next} a&&/^### /{b=0} a&&b' CHANGELOG.md)
-          gh release create "$GITHUB_REF_NAME" dist/*.zip --title "$skill $ver" --notes "${notes:-See CHANGELOG.md}"
+          # a re-pushed tag (history rewrite) refreshes the zips instead of failing on the existing release
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/*.zip --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/*.zip --title "$skill $ver" --notes "${notes:-See CHANGELOG.md}"
+          fi
