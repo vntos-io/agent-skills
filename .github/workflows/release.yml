@@ -1,0 +1,20 @@
+# Push a tag like meeting-prep-v1.1.0 and this publishes a release with every skill zipped for the Claude app.
+name: release
+on:
+  push:
+    tags: ["*-v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check.sh
+      - run: bash scripts/zip-skills.sh
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          skill="${GITHUB_REF_NAME%-v*}"; ver="${GITHUB_REF_NAME##*-v}"
+          notes=$(awk -v s="## $skill" -v v="### $ver" '$0==s{a=1;next} /^## /{a=0} a&&$0~"^"v{b=1;next} a&&/^### /{b=0} a&&b' CHANGELOG.md)
+          gh release create "$GITHUB_REF_NAME" dist/*.zip --title "$skill $ver" --notes "${notes:-See CHANGELOG.md}"

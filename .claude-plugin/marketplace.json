@@ -1,0 +1,19 @@
+{
+  "name": "vntos",
+  "owner": { "name": "VNTOS", "url": "https://vntos.io" },
+  "metadata": { "description": "Claude skills from VNTOS, the ones Peter Mullen uses every day. Each is one readable SKILL.md." },
+  "plugins": [
+    {
+      "name": "meeting-prep",
+      "description": "Walk into every call ready: a one-minute prep card from your emails with the person and what's changed for them.",
+      "version": "1.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/meeting-prep"],
+      "author": { "name": "Peter Mullen", "url": "https://vntos.io" },
+      "homepage": "https://vntos.io/resources/skills/meeting-prep",
+      "license": "MIT",
+      "keywords": ["meetings", "sales", "networking", "prep"]
+    }
+  ]
+}
