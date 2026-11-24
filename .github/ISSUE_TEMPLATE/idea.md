@@ -6,6 +6,6 @@ labels: idea
 
 **The job you want done:**
 
-**How you'd ask Claude for it:**
+**How you'd ask your AI for it:**
 
 **What a good answer looks like:**

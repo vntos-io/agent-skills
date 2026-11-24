@@ -1,4 +1,4 @@
-# Push a tag like meeting-prep-v1.1.0 and this publishes a release with every skill zipped for the Claude app.
+# Push a tag like meeting-prep-v1.1.0 and this publishes a release with every skill zipped for the Claude and ChatGPT apps.
 name: release
 on:
   push:

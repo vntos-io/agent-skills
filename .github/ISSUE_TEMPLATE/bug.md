@@ -6,7 +6,7 @@ labels: bug
 
 **Which skill and version:**
 
-**Where you ran it** (Claude app, Claude Code, other):
+**Where you ran it** (Claude, Claude Code, ChatGPT, Codex, Cursor, other):
 
 **What you asked:**
 

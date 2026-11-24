@@ -1,7 +1,7 @@
 {
   "name": "vntos",
   "owner": { "name": "VNTOS", "url": "https://vntos.io" },
-  "metadata": { "description": "Claude skills from VNTOS, the ones Peter Mullen uses every day. Each is one readable SKILL.md." },
+  "metadata": { "description": "Agent skills from VNTOS, the ones Peter Mullen uses every day, for Claude, ChatGPT, Codex and Cursor. Each is one readable SKILL.md." },
   "plugins": [
     {
       "name": "meeting-prep",
