@@ -12,13 +12,13 @@ Each skill is one plain file, `SKILL.md`, written to the open [Agent Skills](htt
 |---|---|
 | [Meeting prep](skills/meeting-prep/SKILL.md) | Reads your last emails with the person and what's changed for them, then gives you a one-minute card: what you want, what they want, what you can give them, your questions and a 3-sentence opener. |
 
-A follow-up tracker, meeting notes and a writing check are next. Each one gets a page on [vntos.io/resources/skills](https://vntos.io/resources/skills) with a sample of what you get.
+A follow-up tracker, meeting notes and a writing check are next. Each one gets a page on [vntos.io](https://vntos.io/resources?type=skill) with a sample of what you get.
 
 ## Add a skill
 
 ### Claude (the app)
 
-1. Download the zip from the skill's page on [vntos.io](https://vntos.io/resources/skills), or from the [latest release](https://github.com/vntos-io/agent-skills/releases/latest) here. Don't unzip it.
+1. Download the zip from the skill's page on [vntos.io](https://vntos.io/resources/skills/meeting-prep), or from the [latest release](https://github.com/vntos-io/agent-skills/releases/latest) here. Don't unzip it.
 2. In Claude, go to Customize, then Skills.
 3. Click +, then Create skill, then Upload a skill, and pick the zip.
 
