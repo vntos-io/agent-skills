@@ -10,7 +10,7 @@ Each skill is one plain file, `SKILL.md`, written to the open [Agent Skills](htt
 
 | Skill | What it does |
 |---|---|
-| [Meeting prep](skills/meeting-prep/SKILL.md) | Reads your last emails with the person and what's changed for them, then gives you a one-minute card: what you want, what they want, what you can give them, your questions and a 3-sentence opener. |
+| [Meeting prep](skills/meeting-prep/SKILL.md) | For back-to-back calls. Reads your last emails with the person and what's changed for them, then gives you a one-minute card: who they are and what's new, an opener that starts with them, where you left off, the win, what they want, what you can give them, your ask and questions. |
 
 A follow-up tracker, meeting notes and a writing check are next. Each one gets a page on [vntos.io](https://vntos.io/resources?type=skill) with a sample of what you get.
 

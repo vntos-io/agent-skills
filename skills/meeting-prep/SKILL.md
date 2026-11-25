@@ -1,6 +1,6 @@
 ---
 name: meeting-prep
-description: Prepare the user for a meeting or call. Reads what's available about the person (recent emails, calendar invite, notes, their company's site), then writes a short prep card - what the user wants, what the other person wants, what the user can give them, the ask and a fallback, questions to ask, what to avoid, and a 3-sentence opener and a closer with their name in both. Quick mode for a call in minutes; deep mode also researches the person and their company. Use when the user says "prep me for my call with...", "I have a meeting with X", "help me get ready for...", or shares an upcoming meeting.
+description: Prepare the user for a meeting or call, especially back-to-back calls where they need to switch context fast. Reads what's available about the person (recent emails, calendar invite, notes, their company's site and recent posts), then writes a short prep card - who they are and what's new with them, an opener that starts with them, where things left off, the win, what they want, what the user can give them, the ask and a fallback, questions, what to avoid, and a close with their name in it. Quick mode for a call in minutes; deep mode also researches the person and their company. Use when the user says "prep me for my call with...", "I have a meeting with X", "help me get ready for...", or shares an upcoming meeting.
 ---
 
 # Meeting prep
@@ -12,7 +12,7 @@ You help someone walk into a meeting ready, in the time they have. The output is
 - **Quick**: the call is within about 30 minutes, or the user sounds rushed. Ask at most 2 questions, then write the card.
 - **Standard**: an hour or more before the call. Ask up to 4 questions, then write the card.
 - **Deep**: the user asks for deep prep, or the stakes are clearly high (a pitch, a first meeting with someone senior, a deal, a reconnect after a long gap). Do the research in "Deep mode" below first.
-- **Under 5 minutes**: write only the one-sentence goal, the 3 best questions, the one thing to avoid, and the opener.
+- **Under 5 minutes**: write only who they are and what's new, the opener, the one-sentence goal, the 3 best questions and the one thing to avoid.
 
 ## 1. Gather what's already known
 
@@ -21,7 +21,7 @@ Before asking the user anything, look for what you can read yourself:
 - If email is connected, search for recent threads with the person (last 6 months). Note what they said last time, anything the user promised them, and anything they promised the user. Quote their words; don't paraphrase them.
 - If a calendar is connected, read the invite: who's coming, the title, any agenda or attachments.
 - If the user pasted notes, a thread or a LinkedIn profile, use those.
-- If you can browse, look at the person's company site and any news from the last 3 months.
+- If you can browse, look at the person's company site, their recent posts, and any news from the last 3 months: a new role, a launch, a hire, a move.
 
 Tell the user in one or two lines what you found, so they don't repeat it. Never invent a past conversation, a promise or a fact about the person. If something is unclear, ask.
 
@@ -42,15 +42,20 @@ Skip any question the context already answers.
 
 ## 3. Write the prep card
 
-Use this shape. Bullets, not paragraphs. Keep it under about 250 words for Quick and Standard.
+Use this shape. Bullets, not paragraphs. Keep it under about 300 words for Quick and Standard, so it reads in a minute.
 
 ```
 # [Their name, exactly as they write it] - [meeting type] - [date/time]
+[Who they are in one line: role, company, how the user knows them]
 
-## Opener (read this aloud, then ask your first question)
-1. [What you do now, in one plain sentence a stranger could picture]
-2. [One concrete proof from the last month]
-3. [What you want from this call]
+## What's new with them
+- [1-2 things that changed for them lately: a new job, a launch, a hire, a post, news. Say where it came from]
+
+## Opener (read this aloud)
+"[2-3 sentences that start with them: their name, their news or the reason for the call, then a question that hands them the floor]"
+
+## Open threads
+- [Where things left off: anything either side promised last time, quoted]
 
 ## The one thing
 [One sentence: what you want to walk out with]
@@ -76,9 +81,11 @@ Use this shape. Bullets, not paragraphs. Keep it under about 250 words for Quick
 ## Close
 "[A closing sentence that names the next step, who owes what, and uses their name]"
 
-## Open threads
-- [Anything either side promised last time, quoted]
+## If they ask what you do
+"[Two sentences: what you do now, in words a stranger could picture, and one concrete proof from the last month]"
 ```
+
+If there's nothing new about them, say so in one line and use the reason for the call in the opener instead. Never invent news.
 
 ## Questions by meeting type
 
@@ -96,11 +103,13 @@ Use this shape. Bullets, not paragraphs. Keep it under about 250 words for Quick
 ## Rules that come from real calls
 
 - **Give before you ask.** Always fill in "What you can give them" with something specific. It's usually the part people remember.
-- **The opener is 3 sentences, written out, read aloud.** Unwritten, a "quick intro" runs 6 or 7 minutes. Three sentences, then ask the first question and let them talk.
-- **Their name goes on the first and last line of the card.** It's easy to say the wrong name at the end of a day of calls.
+- **The opener starts with them, not you.** Their news or the reason for the call, then a question. Your own intro waits under "If they ask what you do": two sentences, then stop. Unwritten, a "quick intro" runs 6 or 7 minutes.
+- **Ask about them first,** especially when they're between jobs, just changed roles, or brought the topic to the call. Your update comes second.
+- **Their name goes at the top of the card, in the opener and in the close.** It's easy to say the wrong name at the end of a day of calls.
 - **Specific asks beat standing ones.** "Keep me in mind" gets politeness. "Could you introduce me to Sam?" gets a yes or a no.
 - **The middle of the call belongs to what's on their mind,** not to your list of questions. Spread the questions out; don't fire them in a row.
 - **End on one next step,** said out loud, with who owes what.
+- **On a proposal or pricing call, write the price on the card as a sentence.** Say it out loud, then stop talking. When time runs short, skip other sections, never the price. A new request on the call gets "let me confirm that and put it in writing," not a yes on the spot.
 
 ## Deep mode
 
@@ -117,9 +126,16 @@ Do this before writing the card when the stakes are high. Cite a source for ever
 - Recent news: launches, funding, leadership changes, layoffs.
 - Anything that changes what you'd ask or offer.
 
-Then add to the card:
+Then add to the top of the card:
+- **What you thought vs what's true now** (one line each). People and companies change faster than their profiles; if the research shows a shift, lead with it.
 - **What I found** (5-8 bullets with sources)
 - **What it means for this call** (2-3 bullets: what to lean into, what to avoid)
+
+And make these sections fuller:
+- **Run of show** for a 30-45 minute call: warm open (2-3 min), their context (5-7), where they're headed (5-7), who decides, timeline and budget if it's a deal (5), close (3). One or two lines to say in each.
+- **Your ask** gets a floor: the least that still makes the call worth it.
+- **Avoid** gets what to say instead, for each item.
+- **If they ask why you:** three short reasons, then stop.
 
 Stay on the professional record. Don't dig into family or personal life.
 

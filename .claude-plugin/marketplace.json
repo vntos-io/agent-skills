@@ -5,8 +5,8 @@
   "plugins": [
     {
       "name": "meeting-prep",
-      "description": "Walk into every call ready: a one-minute prep card from your emails with the person and what's changed for them.",
-      "version": "1.0.0",
+      "description": "Switch context fast between calls: a one-minute prep card with what's new with the person, where you left off, the win and an opener that starts with them.",
+      "version": "1.1.0",
       "source": "./",
       "strict": false,
       "skills": ["./skills/meeting-prep"],
